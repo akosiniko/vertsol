@@ -1,0 +1,57 @@
+By Albert Edlin Tan
+
+install RUBY 1.8.7 p302
+
+DISABLE THE WORD WRAP of notepad
+
+Copy and paste the following to ruby
+start here....
+gem update --system
+gem install sqlite3-ruby rails rspec rspec-rails gherkin cucumber cucumber-rails database_cleaner win32console heroku nokogiri json require princely sinatra pik gemedit gli rack --no-rdoc --no-ri
+gem install bluecloth --version 2.0.7
+gem install showoff --no-rdoc --no-ri
+a
+end here...
+***********************FAT_FREE_CRM******************
+-------------
+download fat_free_crm of ryanwoods
+save to c:\
+rename to crm
+------------
+copy paste the following to gitbash 
+start here...
+cd /c/crm
+git init
+git add .
+git commit -m 'crm'
+heroku create vertsolcrm37
+git push heroku master
+heroku rake crm:setup USERNAME=paulpajo PASSWORD=12345678 EMAIL=my@email.com
+a
+end here...
+*******************************************************
+
+
+************************SHOWOFF**********************
+-------------
+I'll send you the showoff file: filename = fppt
+save it to or cut it to c:\
+------------
+copy paste the following to gitbash 
+start here...
+cd /c/fppt
+showoff heroku cluetrain37
+git init
+git add .
+git commit -m 'herokuized'
+heroku create cluetrain37
+git push heroku master
+a
+end here...
+*******************************************************
+
+end of pushing crm and showoff
+visit the site and try to run it
+www.vertsolcrm37.heroku.com
+www.cluetrain37.heroku.com
+
